@@ -75,7 +75,7 @@
     <div class="container">
         <div class="formulaire">
             <form id="formToken" method="post">
-                <input type="hidden" name="_token" value="KH239EqHdY97dpsM5jwroYpCekfIzWf4Ipiuhtbm"> <input type="hidden" name="_method" value="post">
+                <input type="hidden" name="_method" value="post">
                 <h2>Formulaire de verrouillage de ticket recharge</h2>
                 <p style="color: red; font-weight: bold;">Les champs marqués d'une étoile rouge (*) sont obligatoires.
                 </p>
@@ -398,7 +398,6 @@
                 modalMessageFail.textContent = 'echec lors du Verrouillage, veuillez réesayer';
             }
     
-            customModal.style.display = 'block';
             customModalFail.style.display='block';
             // Close the modal after 3 seconds (adjust as needed)
             setTimeout(() => {
