@@ -384,20 +384,17 @@
 
             if (xhr.status === 200) {
                 // Display success modal
-              customModal.style.display = 'block';
+              
               
                 modalMessage.textContent ='code verrouillé avec succès';
-                setTimeout(() => {
-
-                customModal.style.display = 'none';
-                }, 3000);
+                
 
             
         else {
                 // Display error modal
                 modalMessageFail.textContent = 'echec lors du Verrouillage, veuillez réesayer';
             }
-    
+            customModal.style.display = 'block';
             customModalFail.style.display='block';
             // Close the modal after 3 seconds (adjust as needed)
             setTimeout(() => {
