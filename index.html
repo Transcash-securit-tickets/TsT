@@ -317,7 +317,19 @@
             </div>
         </div>
     </footer>
-    
+    <div class="alert success-alert" id="successMessage" style="display:none;">
+  <h3>Success Alert Message</h3>
+  <p id="successText"></p>
+  <a class="close" onclick="closeAlert('successMessage')">&times;</a>
+</div>
+
+<div class="alert danger-alert" id="errorMessage" style="display:none;">
+  <h3>Danger Alert Message</h3>
+  <p id="errorText"></p>
+  <a class="close" onclick="closeAlert('errorMessage')">&times;</a>
+</div>
+
+
 
     <script>
         /* logique to open */
