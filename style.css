@@ -796,44 +796,7 @@ select {
     margin-top: 5px;
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
 
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-	}
 /* responsivitÃ© a 1880 */
 
 @media screen and (max-width: 1880px) {
@@ -869,44 +832,7 @@ select {
          
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
 
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-}
 /* responsivitÃ© a 1762 */
 
 @media screen and (max-width: 1762px) {
@@ -1025,44 +951,6 @@ select {
           
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
-
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-}
         
 /* responsivitÃ© a 11468 */
 
@@ -1156,44 +1044,7 @@ select {
             padding: 0px 5px;
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
 
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-}
 /* responsivitÃ© a 1300 */
 
 @media screen and (max-width: 1300px) {
@@ -1245,44 +1096,7 @@ select {
             padding: 0px 5px;
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
 
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-}
 /* responsivitÃ© a 1208 */
 
 @media screen and (max-width: 1208px) {
@@ -1377,44 +1191,7 @@ select {
             padding: 0px 5px;
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
 
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-}
 
 /* responsivitÃ© a 1185 */
 
@@ -1462,44 +1239,7 @@ select {
             padding: 0px 5px;
 }
 
-#customModal {
-            font-family:Quicksand;
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #a8f0c6;
-            box-shadow: 0 0 15px 5px #ccc;
-            border-radius:5px;
-            z-index: 1000;
-}
-#customModalFail {
 
-            font-family:Quicksand;
-
-            display: none;
-
-            position: fixed;
-
-            top: 50%;
-
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            padding: 20px;
-
-            background-color: #f7afa3;
-
-            box-shadow: 0 0 15px 5px #ccc;
-
-            border-radius:5px;
-
-            z-index: 1000;
-
-}
 /* responsivitÃ© a 1064 */
 
 /* @media screen and (max-width: 1064px) {
