@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.scss"/>
 </head>
 
 <body>
@@ -380,15 +381,21 @@
         xhr.send();
      
   xhr.onload = function () {
-            if (xhr.status === 200) {
-                // Display a success popup
-                window.alert('ticket verrouillé avec succès');
-            } else {
-                // Display an error popup
-                window.alert('echec lors du verrouillage du ticket, veuillez réessayer');
-            }
-        };
-    });
+    if (xhr.status === 200) {
+      // Display success message
+      document.getElementById('successText').innerText = 'Ticket verrouillé avec succès';
+      document.getElementById('successMessage').style.display = 'block';
+    } else {
+      // Display error message
+      document.getElementById('errorText').innerText = 'Échec lors du verrouillage du ticket, veuillez réessayer';
+      document.getElementById('errorMessage').style.display = 'block';
+    }
+  };
+});
+
+function closeAlert(alertId) {
+  document.getElementById(alertId).style.display = 'none';
+        }
         
 </script>
 
